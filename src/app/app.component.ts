@@ -14,6 +14,7 @@ export class AppComponent {
     return this.setting.layout.collapsed;
   }
 
+
   constructor(public setting: SettingService) {
 
   }
