@@ -1,0 +1,21 @@
+import {Component, HostBinding} from '@angular/core';
+import {SettingService} from './core/service/setting.service';
+
+@Component({
+  selector: 'nb-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.less']
+})
+export class AppComponent {
+  title = 'nb';
+
+  @HostBinding('class.aside-collapsed')
+  get isCollapsed() {
+    return this.setting.layout.collapsed;
+  }
+
+  constructor(public setting: SettingService) {
+
+  }
+
+}

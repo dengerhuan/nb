@@ -1,0 +1,28 @@
+<div class="logo">
+
+  <a>
+    <img class="expanded" src="./assets/img/logo-full.svg"
+         [ngStyle]="{'max-height':'40px'}">
+
+    <img class="collapsed" src="./assets/img/logo.svg"
+         [ngStyle]="{'max-height':'30px'}">
+  </a>
+</div>
+
+
+<div class="top-nav-wrap">
+  <ul class="top-nav">
+      <li>
+        <div class="item" (click)="toggleCollapsedSideabar()">
+          <i class="anticon anticon-menu-{{setting.layout.collapsed ? 'unfold' : 'fold'}}"></i>
+        </div>
+      </li>
+
+      <li>
+        <div class="item">
+          <i class="anticon anticon-github"></i>
+        </div>
+      </li>
+    </ul>
+
+</div>
