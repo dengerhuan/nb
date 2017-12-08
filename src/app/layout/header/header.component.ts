@@ -16,6 +16,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  searchToggleChange() {
+    this.searchToggleStatus = !this.searchToggleStatus;
+  }
 
   toggleCollapsedSideabar() {
     this.setting.setLayout('collapsed', !this.setting.layout.collapsed);
